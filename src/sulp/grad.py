@@ -30,7 +30,7 @@ def sum_grad_slice(g, s_idx, e_idx):
     # minor optimization, saves ~15% if most users have 1 sample
     # instead of this optimization, it may be better to
     # vectorize operations over layers, where gradient has the same shape
-    #if s_idx + 1 == e_idx:  
+    #if s_idx + 1 == e_idx:
     #    return [p[s_idx, ...] for p in g]
     return [p[s_idx:e_idx, ...].sum(dim=0) for p in g]
 
@@ -155,7 +155,7 @@ def make_gradient_func(model, loss_fn):
     def compute_loss(params, buffers, sample, target):
         batch = sample.unsqueeze(0)
         targets = target.unsqueeze(0)
-    
+
         predictions = functional_call(model, (params, buffers), (batch,))
         loss = loss_fn(predictions, targets)
         return loss

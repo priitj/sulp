@@ -26,3 +26,5 @@ from .grad import (GradAccumulator,
         make_gradient_func,
         add_noise)
 
+__all__ = ("GroupPoissonSampler", "GradAccumulator", "detach_params",
+        "make_gradient_func", "add_noise")

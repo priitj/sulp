@@ -1,4 +1,3 @@
-import pytest
 from sulp import sample
 
 TEST_USERIDS = {
@@ -21,7 +20,7 @@ TEST_SAMPLE_LEN = [
     "mix": 12,
     "alldiff": 8}),
     # edge case: very low sampling rate
-    (0.00001, { "single": 0, 
+    (0.00001, { "single": 0,
     "mix": 0,
     "alldiff": 0})
 ]
