@@ -1,5 +1,7 @@
 # Simple User-Level Privacy
 
+[![tests](https://github.com/priitj/sulp/actions/workflows/python-app.yml/badge.svg)](https://github.com/priitj/sulp/actions/workflows/python-app.yml)
+
 Implements "user level" differential privacy for training PyTorch models with DP-SGD.
 
 By convention in the differential privacy literature, a "user" is not somebody who trains or uses the machine learning model, but a person whose data is in the training set. An example would be a patient in a clinical dataset. Therefore, user level differential privacy (ULDP) protects the privacy of data subjects.
