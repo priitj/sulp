@@ -11,7 +11,7 @@ User level privacy extends the privacy protection from one training example to a
 ## Installation
 
 ```
-pip install -e .
+pip install --upgrade git+https://github.com/priitj/sulp.git
 ```
 
 `sulp` is designed to work with PyTorch and installing it will pull the `torch` package as a dependency. Because there are several good libraries that include DP accountants, `sulp` does not have its own accounting functionality. You can use the accountants from [Opacus](https://opacus.ai/api/accounting/accounting.html) instead.
