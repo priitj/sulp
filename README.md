@@ -34,5 +34,15 @@ If you want to train LLMs with user level privacy, you may be interested in thes
 
 ## Citation
 
-Coming soon.
+```
+@inproceedings{iwspa26jarv,
+  title={Patient Privacy in Differentially Private Diagnostic Models},
+  author={J\"arv, Priit and Pahikkala, Tapio and Airola, Antti},
+  booktitle={Proceedings of the 12th ACM International Workshop on Security and Privacy Analytics (IWSPA ’26), June 23–25, 2026, Frankfurt am Main, Germany},
+  numpages={6},
+  publisher={ACM},
+  address={New York, NY, USA},
+  year={2026}
+}
+```
 
